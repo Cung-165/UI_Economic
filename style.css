@@ -16,33 +16,14 @@ body,input{
 }
 a{
     text-decoration: none;
+    color:black;
+}
+a:hover{
+    text-decoration: none;
 }
 
 
 /* Header */
-.nav__logo{
-    width: 50x;
-    height: 60px;
-    padding: 5px;
-    /* float: left; */
-}
-.nav__logo img{
-    width: 100%;
-    height: 100%;
-}
-ul{
-    list-style: none;
-}
-.nav__list{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.nav__item:not(:last-child){
-    margin-right: 1.6rem;
-}
-
 .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -55,8 +36,61 @@ ul{
     justify-content: space-between;
     flex-direction: row;
     height: 7rem;
-    background: maroon;
-    padding: 5px;
+    background: white;
+    padding: 15px 35px;
+    box-shadow:2px 3px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    
+}
+.nav__logo{
+    /* width: 50x;
+    height: 60px;
+    padding: 5px; */
+    /* float: left; */
+}
+.nav__logo img{
+    width: 100%;
+    height: 100%;
+}
+.nav__logo a h3{
+    color: black;
+    font-weight: 400;
+    font-size:26px;
+}
+.nav__logo a h3:hover{
+    font-size: 32px;
+    text-decoration: none;
+    color: red;
+}
+ul{
+    list-style: none;
+}
+.nav__list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.nav__item:not(:last-child){
+    margin-right: 1.6rem;
+}
+
+
+.nav__menu{
+    margin-top:0.5rem;
+}
+.nav__menu li a{
+    color: black;
+    font-weight: 400;
+    font-size:18px;
+}
+.nav__menu li a:hover{
+    color: red;
+    text-decoration: none;
+    /* border:1px solid rgba(226, 222, 222, 0.308); */
+    background-color:rgba(7, 7, 7, 0.075);
+    border-radius: 5px;
 }
 .nav__icons{
     display: flex;
@@ -69,4 +103,38 @@ ul{
 }
 .icon__item{
     font-size: 20px;
+}
+
+/* Banner */
+.banner_information{
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card_information{
+    border:none;
+    background-color:rgba(0, 0, 0, 0);
+    font-weight: bold;
+}
+.banner{
+    width: 100%;
+    height:800px;
+   
+}
+.banner h1{
+    font-size:30px;
+}
+.btn-banner{
+    background:black;
+    border:black solid;
+    min-width: 200px;
+    text-align: center;
+    font-size:24px;
+}
+.btn-banner:hover{
+    background:red;
+    border:red solid;
 }
